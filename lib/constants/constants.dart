@@ -9,14 +9,19 @@ List<question> getQuestionList() {
     'امیراحمدادیبی',
     'دیوید کاپرفیلد',
     'هری هودینی',
-    'دیوید بلین'
+    'دیوید بلین',
   ];
 
   var secondQuestion = question();
   secondQuestion.qTitle = 'چه کشوری ایستگاه فضایی میر را بنا کرد؟';
   secondQuestion.imageNumber = '2';
   secondQuestion.correctAnswer = 0;
-  secondQuestion.answerList = ['(شوروی سابق)روسیه', 'آمریکا', 'چین', 'هند'];
+  secondQuestion.answerList = [
+    '(شوروی سابق)روسیه',
+    'آمریکا',
+    'چین',
+    'هند',
+  ];
 
   return [firstQuestion, secondQuestion];
 }

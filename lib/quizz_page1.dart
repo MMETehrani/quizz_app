@@ -17,6 +17,7 @@ class _QuizzPage1State extends State<QuizzPage1> {
 
   @override
   Widget build(BuildContext context) {
+    selectedQuestion = getQuestionList()[shownQuestionIndex];
     String questionImageIndex =
         getQuestionList()[shownQuestionIndex].imageNumber!;
     return Scaffold(
@@ -62,9 +63,9 @@ class _QuizzPage1State extends State<QuizzPage1> {
         textAlign: TextAlign.end,
       ),
       onTap: () {
-        setState(() {
-          shownQuestionIndex++;
-        });
+        // setState(() {
+        //   shownQuestionIndex++;
+        // });
       },
     );
   }
