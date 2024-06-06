@@ -42,7 +42,7 @@ class _QuizzPage1State extends State<QuizzPage1> {
               image: AssetImage('images/$questionImageIndex.png'),
             ),
             Text(
-              'مشهورترین شعبده باز دنیا کیست؟',
+              selectedQuestion!.qTitle!,
               style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
             ),
             SizedBox(
@@ -58,7 +58,7 @@ class _QuizzPage1State extends State<QuizzPage1> {
   Widget getOptionsItem(int index) {
     return ListTile(
       title: Text(
-        getQuestionList()[shownQuestionIndex].answerList![index],
+        selectedQuestion!.answerList![index],
         textAlign: TextAlign.end,
       ),
       onTap: () {
