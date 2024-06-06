@@ -1,7 +1,19 @@
 import 'package:flutter/material.dart';
+import 'package:quizz_app/Data/question.dart';
+import 'constants/constants.dart';
 
-class QuizzPage1 extends StatelessWidget {
+class QuizzPage1 extends StatefulWidget {
   const QuizzPage1({super.key});
+
+  @override
+  State<QuizzPage1> createState() => _QuizzPage1State();
+}
+
+class _QuizzPage1State extends State<QuizzPage1> {
+  int shownQuestionIndex = 0;
+  question? selectedQuestion;
+  bool isFinalAnswerSumbited = false;
+  int correctAnswer = 0;
 
   @override
   Widget build(BuildContext context) {
@@ -34,30 +46,15 @@ class QuizzPage1 extends StatelessWidget {
             SizedBox(
               height: 40,
             ),
-            ListTile(
-              title: Text(
-                '  ( پاسخ اول',
-                textAlign: TextAlign.end,
-              ),
-            ),
-            ListTile(
-              title: Text(
-                '  ( پاسخ دوم',
-                textAlign: TextAlign.end,
-              ),
-            ),
-            ListTile(
-              title: Text(
-                '  ( پاسخ سوم',
-                textAlign: TextAlign.end,
-              ),
-            ),
-            ListTile(
-              title: Text(
-                '  ( پاسخ چهارم',
-                textAlign: TextAlign.end,
-              ),
-            ),
+            ...List.generate(
+                4,
+                (index) => ListTile(
+                      title: Text(
+                        getQuestionList()[shownQuestionIndex]
+                            .answerList![index],
+                        textAlign: TextAlign.end,
+                      ),
+                    )),
           ],
         ),
       ),
