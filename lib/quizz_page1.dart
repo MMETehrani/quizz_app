@@ -19,7 +19,48 @@ class QuizzPage1 extends StatelessWidget {
           ),
         ),
       ),
-      body: Text(''),
+      body: SafeArea(
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.center,
+          // mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            Image(
+              image: AssetImage('images/1.png'),
+            ),
+            Text(
+              'مشهورترین شعبده باز دنیا کیست؟',
+              style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
+            ),
+            SizedBox(
+              height: 40,
+            ),
+            ListTile(
+              title: Text(
+                '  ( پاسخ اول',
+                textAlign: TextAlign.end,
+              ),
+            ),
+            ListTile(
+              title: Text(
+                '  ( پاسخ دوم',
+                textAlign: TextAlign.end,
+              ),
+            ),
+            ListTile(
+              title: Text(
+                '  ( پاسخ سوم',
+                textAlign: TextAlign.end,
+              ),
+            ),
+            ListTile(
+              title: Text(
+                '  ( پاسخ چهارم',
+                textAlign: TextAlign.end,
+              ),
+            ),
+          ],
+        ),
+      ),
     );
   }
 }
