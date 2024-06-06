@@ -17,6 +17,8 @@ class _QuizzPage1State extends State<QuizzPage1> {
 
   @override
   Widget build(BuildContext context) {
+    String questionImageIndex =
+        getQuestionList()[shownQuestionIndex].imageNumber!;
     return Scaffold(
       backgroundColor: Colors.white,
       appBar: AppBar(
@@ -37,7 +39,7 @@ class _QuizzPage1State extends State<QuizzPage1> {
           // mainAxisAlignment: MainAxisAlignment.center,
           children: [
             Image(
-              image: AssetImage('images/1.png'),
+              image: AssetImage('images/$questionImageIndex.png'),
             ),
             Text(
               'مشهورترین شعبده باز دنیا کیست؟',
@@ -46,18 +48,24 @@ class _QuizzPage1State extends State<QuizzPage1> {
             SizedBox(
               height: 40,
             ),
-            ...List.generate(
-                4,
-                (index) => ListTile(
-                      title: Text(
-                        getQuestionList()[shownQuestionIndex]
-                            .answerList![index],
-                        textAlign: TextAlign.end,
-                      ),
-                    )),
+            ...List.generate(4, (index) => getOptionsItem(index)),
           ],
         ),
       ),
+    );
+  }
+
+  Widget getOptionsItem(int index) {
+    return ListTile(
+      title: Text(
+        getQuestionList()[shownQuestionIndex].answerList![index],
+        textAlign: TextAlign.end,
+      ),
+      onTap: () {
+        setState(() {
+          shownQuestionIndex++;
+        });
+      },
     );
   }
 }
