@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:quizz_app/quizz_page1.dart';
 
 class HomeWidget extends StatelessWidget {
   const HomeWidget({super.key});
@@ -31,7 +32,12 @@ class HomeWidget extends StatelessWidget {
                 minimumSize: Size(200, 60),
                 backgroundColor: Colors.blue[900],
               ),
-              onPressed: () {},
+              onPressed: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => QuizzPage1()),
+                );
+              },
               child: Text(
                 'شروع بازی',
                 style: TextStyle(
