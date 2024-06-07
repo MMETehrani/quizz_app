@@ -62,7 +62,11 @@ class _QuizzPage1State extends State<QuizzPage1> {
                 onPressed: () {
                   Navigator.push(
                     context,
-                    MaterialPageRoute(builder: (context) => ResultScreen()),
+                    MaterialPageRoute(
+                      builder: (context) => ResultScreen(
+                        resultAnswer: correctAnswer,
+                      ),
+                    ),
                   );
                 },
                 child: Text(
@@ -89,6 +93,7 @@ class _QuizzPage1State extends State<QuizzPage1> {
       onTap: () {
         if (selectedQuestion!.correctAnswer == index) {
           print('correct');
+          correctAnswer++;
         } else {
           print('wrong');
         }
