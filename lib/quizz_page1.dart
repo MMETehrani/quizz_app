@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:quizz_app/Data/question.dart';
+import 'package:quizz_app/screens/result_screen.dart';
 import 'constants/constants.dart';
 
 class QuizzPage1 extends StatefulWidget {
@@ -58,7 +59,12 @@ class _QuizzPage1State extends State<QuizzPage1> {
                   minimumSize: Size(200, 60),
                   backgroundColor: Colors.teal[900],
                 ),
-                onPressed: () {},
+                onPressed: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(builder: (context) => ResultScreen()),
+                  );
+                },
                 child: Text(
                   'مشاهده نتایج کوییز',
                   style: TextStyle(
