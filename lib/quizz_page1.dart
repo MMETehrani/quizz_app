@@ -50,6 +50,22 @@ class _QuizzPage1State extends State<QuizzPage1> {
               height: 40,
             ),
             ...List.generate(4, (index) => getOptionsItem(index)),
+            if (isFinalAnswerSumbited == true)
+              ElevatedButton(
+                style: ElevatedButton.styleFrom(
+                  minimumSize: Size(200, 60),
+                  backgroundColor: Colors.teal[900],
+                ),
+                onPressed: () {},
+                child: Text(
+                  'مشاهده نتایج کوییز',
+                  style: TextStyle(
+                    fontWeight: FontWeight.bold,
+                    color: Colors.white,
+                    fontSize: 18,
+                  ),
+                ),
+              ),
           ],
         ),
       ),
@@ -63,9 +79,19 @@ class _QuizzPage1State extends State<QuizzPage1> {
         textAlign: TextAlign.end,
       ),
       onTap: () {
-        // setState(() {
-        //   shownQuestionIndex++;
-        // });
+        if (selectedQuestion!.correctAnswer == index) {
+          print('correct');
+        } else {
+          print('wrong');
+        }
+        setState(() {
+          if (shownQuestionIndex < getQuestionList().length - 1) {
+            shownQuestionIndex++;
+          }
+          if (shownQuestionIndex == getQuestionList().length - 1) {
+            isFinalAnswerSumbited = true;
+          }
+        });
       },
     );
   }
