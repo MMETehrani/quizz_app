@@ -14,6 +14,8 @@ class _QuizzPage1State extends State<QuizzPage1> {
   question? selectedQuestion;
   bool isFinalAnswerSumbited = false;
   int correctAnswer = 0;
+  int numberPage = getQuestionList().length - 1;
+  // int page = shownQuestionIndex + 1;
 
   @override
   Widget build(BuildContext context) {
@@ -26,7 +28,7 @@ class _QuizzPage1State extends State<QuizzPage1> {
         centerTitle: true,
         backgroundColor: Colors.amber[300],
         title: Text(
-          'کوییز',
+          'سوال ${shownQuestionIndex + 1} از ${numberPage + 1}',
           style: TextStyle(
             fontWeight: FontWeight.bold,
             color: Colors.white,
@@ -84,12 +86,12 @@ class _QuizzPage1State extends State<QuizzPage1> {
         } else {
           print('wrong');
         }
+        if (shownQuestionIndex == getQuestionList().length - 1) {
+          isFinalAnswerSumbited = true;
+        }
         setState(() {
           if (shownQuestionIndex < getQuestionList().length - 1) {
             shownQuestionIndex++;
-          }
-          if (shownQuestionIndex == getQuestionList().length - 1) {
-            isFinalAnswerSumbited = true;
           }
         });
       },
