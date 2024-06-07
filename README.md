@@ -1,21 +1,25 @@
+## quizz: A Simple Quiz Game
 
-# quizz: یک بازی کوییز ساده
 ---
-quizz یک بازی کوییز ساده و سرگرم کننده است .
 
-این بازی در حال حاضر در مراحل اولیه توسعه خود قرار دارد و  هنوز ویژگی های خاصی ندارد، اما ما برنامه های بزرگی برای آینده آن داریم و قصد داریم با کمک شما آن را به مراتب بهتر کنیم.
+quizz is a simple and fun quiz game that is completely written from scratch by [Your GitHub Username].
 
-## چگونه می توانید مشارکت کنید:
+The game is currently in its early stages of development and doesn't have any special features yet, but we have big plans for the future and we want to make it much better with your help.
+
+## How You Can Contribute:
+
 ---
-کانتریبوت بفرستید: ما از هر نوع کمکی استقبال می کنیم! می توانید کد را اصلاح کنید، ویژگی های جدید اضافه کنید، یا حتی فقط اشکالات را گزارش دهید.
-ایده های خود را به اشتراک بگذارید: چه نوع سوالاتی دوست دارید در بازی ببینید؟ چه نوع ویژگی هایی را مفید می دانید؟ نظرات و پیشنهادات خود را با ما در میان بگذارید!
-مسائل را گزارش دهید: اگر با مشکلی در بازی مواجه شدید، لطفاً آن را به ما گزارش دهید تا آن را برطرف کنیم.
-با مشارکت شما، می توانیم quizz را به بهترین بازی کوییز  موجود تبدیل کنیم!
 
-### برای شروع، می توانید موارد زیر را انجام دهید:
+- **Contribute code:** We welcome all kinds of contributions! You can fix bugs, add new features, or even just report issues.
+- **Share your ideas:** What kind of questions would you like to see in the game? What kind of features would you find helpful? Share your thoughts and suggestions with us!
+- **Report issues:** If you encounter any problems with the game, please let us know so we can fix them.
 
-مخزن را کانتریبوت کنید: [[لینک مخزن گیت هاب](https://github.com/MMETehrani/quizz_app/)]
+With your help, we can make quizz the best quiz game out there!
 
-به لیست مسائل موجود نگاهی بیندازید: [[لینک لیست مسائل گیت هاب](https://github.com/MMETehrani/quizz_app/)]
+### To get started, you can do the following:
 
-در مورد بازی در انجمن بحث کنید: [[لینک انجمن گیت هاب](https://github.com/MMETehrani/quizz_app/)]
+- Clone the repository: [[Link to GitHub repository](https://github.com/MMETehrani/quizz_app/)]
+- Take a look at the list of existing issues: [[Link to GitHub issues list](https://github.com/MMETehrani/quizz_app/)]
+- Discuss the game on the forum: [[Link to GitHub forum](https://github.com/MMETehrani/quizz_app/)]
+
+**Thank you for your contributions!**
