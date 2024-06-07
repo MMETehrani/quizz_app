@@ -1,16 +1,21 @@
-# quizz_app
 
-A new Flutter project.
+# quizz: یک بازی کوییز ساده
+---
+quizz یک بازی کوییز ساده و سرگرم کننده است .
 
-## Getting Started
+این بازی در حال حاضر در مراحل اولیه توسعه خود قرار دارد و  هنوز ویژگی های خاصی ندارد، اما ما برنامه های بزرگی برای آینده آن داریم و قصد داریم با کمک شما آن را به مراتب بهتر کنیم.
 
-This project is a starting point for a Flutter application.
+## چگونه می توانید مشارکت کنید:
+---
+کانتریبوت بفرستید: ما از هر نوع کمکی استقبال می کنیم! می توانید کد را اصلاح کنید، ویژگی های جدید اضافه کنید، یا حتی فقط اشکالات را گزارش دهید.
+ایده های خود را به اشتراک بگذارید: چه نوع سوالاتی دوست دارید در بازی ببینید؟ چه نوع ویژگی هایی را مفید می دانید؟ نظرات و پیشنهادات خود را با ما در میان بگذارید!
+مسائل را گزارش دهید: اگر با مشکلی در بازی مواجه شدید، لطفاً آن را به ما گزارش دهید تا آن را برطرف کنیم.
+با مشارکت شما، می توانیم quizz را به بهترین بازی کوییز  موجود تبدیل کنیم!
 
-A few resources to get you started if this is your first Flutter project:
+### برای شروع، می توانید موارد زیر را انجام دهید:
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+مخزن را کانتریبوت کنید: [[لینک مخزن گیت هاب](https://github.com/MMETehrani/quizz_app/)]
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+به لیست مسائل موجود نگاهی بیندازید: [[لینک لیست مسائل گیت هاب](https://github.com/MMETehrani/quizz_app/)]
+
+در مورد بازی در انجمن بحث کنید: [[لینک انجمن گیت هاب](https://github.com/MMETehrani/quizz_app/)]
