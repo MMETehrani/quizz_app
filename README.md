@@ -19,7 +19,6 @@ With your help, we can make quizz the best quiz game out there!
 ### To get started, you can do the following:
 
 - Clone the repository: [[Link to GitHub repository](https://github.com/MMETehrani/quizz_app/)]
-- Take a look at the list of existing issues: [[Link to GitHub issues list](https://github.com/MMETehrani/quizz_app/)]
-- Discuss the game on the forum: [[Link to GitHub forum](https://github.com/MMETehrani/quizz_app/)]
+- Take a look at the list of existing issues: [[Link to GitHub issues list](https://github.com/MMETehrani/quizz_app/issues)]
 
 **Thank you for your contributions!**
